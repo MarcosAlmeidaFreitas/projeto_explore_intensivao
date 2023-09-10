@@ -1,0 +1,169 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+
+  /* Cores Usadas no Projeto */
+  --color-white: white;
+  --color-purple: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  --color-dark-purple: #312D64;
+  --color-pink: #B52184;
+}
+
+html, body, input, textarea{
+  font-family: 'Mulish', sans-serif;
+}
+
+/* Configurações do Header da Página */
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+header h1{
+  color: var(--color-pink);
+  font-size: 5.8rem;
+  font-weight: 900;
+}
+
+header h2{
+  color: var(--color-dark-purple);
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+#img_btn{
+  position: absolute;
+  margin-left: 1rem;
+  margin-top: 10rem;
+}
+
+/* Configurações do Aside da pagina */
+aside{
+  background: var(--color-purple);
+  display: flex;
+  justify-content: space-around;
+}
+
+aside p{
+  color: var(--color-dark-purple);
+  font-weight: 600;
+  font-size: 1.9rem;
+  width: 32rem;
+}
+
+aside h2{
+  color: var(--color-pink);
+  font-weight: 900;
+  font-size: 3.5rem;
+  margin-top: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+
+aside .container{
+  margin: 6.4rem 11rem;
+  width: 36rem;
+  gap: 6rem;
+  background-color: var(--color-white);
+  padding: 3.2rem;
+  border-radius: 2.4rem;
+}
+
+/* Configurações do Main/Formulario */
+main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 9rem;
+  margin-left: 11rem;
+}
+
+main h1{
+  font-size: 4.2rem;
+  font-weight: 900;
+  color: var(--color-pink);
+  margin-bottom: 3rem;
+}
+
+main img{
+  width: 80rem;
+}
+
+main form{
+ display: flex;
+ flex-direction: column; 
+ gap: 2.4rem;
+}
+
+main input{
+  padding: 1.6rem;
+  width: 60rem;
+  border-radius: 1.6rem;
+  border: 1.5px solid var(--color-dark-purple);
+}
+
+main label{
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+
+main .input-icon-user{
+  background-image: url("assets/user.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 3rem;
+}
+
+main input::placeholder{
+  font-style: italic;
+}
+
+main .input-icon-email{
+  background-image: url("assets/@.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 3rem;
+}
+
+main textarea{
+  border-radius: 1.6rem;
+  padding: 1.6rem;
+  color: var(--color-dark-purple);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+main button{
+  background-color: var(--color-dark-purple);
+  padding: 1.6rem;
+  color: var(--color-white);
+  border-radius: 1.6rem;
+  border: none;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+
+
+/* Configurações do Footer da Página */
+footer{
+  background: var(--color-purple);
+}
+
+footer p{
+  color: var(--color-white);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem;
+}
+
