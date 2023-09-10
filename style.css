@@ -204,7 +204,7 @@ footer p{
 
   header .container{
     text-align: center;
-    padding-left: 0;
+    padding: 1rem;
     margin: 0;
   }
 
@@ -246,9 +246,13 @@ footer p{
     overflow: hidden;
   }
 
+  main h1{
+    text-align: center;
+  }
+
   main .container_form{
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
 } 
