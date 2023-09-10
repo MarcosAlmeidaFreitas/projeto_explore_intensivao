@@ -203,8 +203,8 @@ footer p{
   }
 
   header .container{
-    text-align: center;
     margin-right: 1rem;
+    text-align: center;
   }
 
   header h1, header h2{
