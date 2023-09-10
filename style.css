@@ -209,11 +209,17 @@ footer p{
 
   header .div_img{
     text-align: center;
+    width: 100vw;
+  }
+
+  header #img_astro{
+    width: 100vw;
   }
 
   header #img_btn{
     position: static;
   }
+
   header .divContainerImg{
     position: static;
     text-align: center;
