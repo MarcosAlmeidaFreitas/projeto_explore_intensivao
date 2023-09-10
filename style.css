@@ -14,6 +14,7 @@
   --color-pink: #B52184;
 }
 
+
 html, body, input, textarea{
   font-family: 'Mulish', sans-serif;
 }
@@ -24,6 +25,7 @@ header{
   justify-content: space-around;
   align-items: center;
   margin-bottom: 10rem;
+  width: 100%;
 }
 
 header h1{
@@ -38,6 +40,19 @@ header h2{
   font-weight: 600;
 }
 
+header .div_img{
+  width: 100%;
+}
+
+header{
+  width: 100%;
+}
+
+header .container{
+  width: 100%;
+  padding-left: 5rem;
+}
+
 #img_btn{
   position: absolute;
   margin-left: 1rem;
@@ -49,6 +64,9 @@ aside{
   background: var(--color-purple);
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  padding: 10rem;
+  gap: 5rem;
 }
 
 aside p{
@@ -67,7 +85,7 @@ aside h2{
 }
 
 aside .container{
-  margin: 6.4rem 11rem;
+  /* margin: 6.4rem 11rem; */
   width: 36rem;
   gap: 6rem;
   background-color: var(--color-white);
@@ -81,7 +99,7 @@ main{
   justify-content: space-between;
   align-items: center;
   gap: 9rem;
-  margin-left: 11rem;
+  margin-top: 4rem;
 }
 
 main h1{
@@ -91,19 +109,29 @@ main h1{
   margin-bottom: 3rem;
 }
 
+main .container{
+  width: 100%;
+}
+
+main .container_form{
+  width: 100%;
+  padding-left: 4rem;
+}
+
 main img{
-  width: 80rem;
+  width: 100%;
 }
 
 main form{
  display: flex;
  flex-direction: column; 
  gap: 2.4rem;
+ width: 100%;
 }
 
 main input{
   padding: 1.6rem;
-  width: 60rem;
+  width: 100%;
   border-radius: 1.6rem;
   border: 1.5px solid var(--color-dark-purple);
 }
@@ -156,6 +184,7 @@ main button{
 
 /* Configurações do Footer da Página */
 footer{
+  margin-top: 2rem;
   background: var(--color-purple);
 }
 
@@ -167,3 +196,45 @@ footer p{
   padding: 1.6rem;
 }
 
+@media(max-width: 1200px){
+  header{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  header h1, header h2{
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  header .div_img{
+    text-align: center;
+  }
+
+  header #img_btn{
+    position: static;
+  }
+  header .divContainerImg{
+    position: static;
+    text-align: center;
+  }
+
+  aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .container{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  main .container_form{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+} 
